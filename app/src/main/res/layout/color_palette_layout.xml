@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageButton
+                android:id="@+id/selectColorBtn"
+                android:layout_width="@dimen/borderRadius"
+                android:layout_height="@dimen/borderRadius"
+                android:src="@drawable/color_disc"
+                android:scaleType="centerCrop"
+                android:layout_marginLeft="5dp"/>
+        <ImageButton
+                android:id="@+id/pickColorBtn"
+                android:layout_width="@dimen/borderRadius"
+                android:layout_height="@dimen/borderRadius"
+                android:src="@drawable/color_picker"
+                android:scaleType="centerCrop"
+                android:layout_marginLeft="5dp"/>
+        <android.arnab.softdraw.Circle
+                android:id="@+id/colorBtn"
+                android:layout_width="@dimen/borderRadius"
+                android:layout_height="@dimen/borderRadius"
+                app:circleColor="@android:color/transparent"
+                android:background="@drawable/color_disc"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="2dp"/>
+
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <android.arnab.softdraw.Circle
+                    android:id="@+id/border1"
+                    android:layout_width="@dimen/borderRadius"
+                    android:layout_height="@dimen/borderRadius"
+                    android:layout_margin="3dp"
+                    android:background="@android:color/transparent"
+                    android:layout_centerInParent="true"/>
+
+            <android.arnab.softdraw.Circle
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@android:color/transparent"
+                    android:layout_centerInParent="true"
+                    app:circleColor="@android:color/white"/>
+
+            <android.arnab.softdraw.Circle
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_centerInParent="true"
+                    app:circleColor="#3b2219"
+                    android:background="@android:color/transparent"/>
+            <android.arnab.softdraw.Circle
+                    android:id="@+id/circle1"
+                    android:layout_width="@dimen/colorPaletteElementWidth"
+                    android:layout_height="@dimen/colorPaletteElementHeight"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    app:circleColor="@color/color1"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <android.arnab.softdraw.Circle
+                    android:id="@+id/border2"
+                    android:layout_width="@dimen/borderRadius"
+                    android:layout_height="@dimen/borderRadius"
+                    android:layout_margin="3dp"
+                    android:background="@android:color/transparent"
+                    android:layout_centerInParent="true"
+                    app:circleColor="@color/color2"/>
+
+            <android.arnab.softdraw.Circle
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@android:color/transparent"
+                    android:layout_centerInParent="true"
+                    app:circleColor="@android:color/white"/>
+
+            <android.arnab.softdraw.Circle
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_centerInParent="true"
+                    app:circleColor="#3b2219"
+                    android:background="@android:color/transparent"/>
+            <android.arnab.softdraw.Circle
+                    android:id="@+id/circle2"
+                    android:layout_width="@dimen/colorPaletteElementWidth"
+                    android:layout_height="@dimen/colorPaletteElementHeight"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    app:circleColor="@color/color2"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <android.arnab.softdraw.Circle
+                    android:id="@+id/border3"
+                    android:layout_width="@dimen/borderRadius"
+                    android:layout_height="@dimen/borderRadius"
+                    android:layout_margin="3dp"
+                    android:background="@android:color/transparent"
+                    android:layout_centerInParent="true"
+                    app:circleColor="@color/color3"/>
+
+            <android.arnab.softdraw.Circle
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@android:color/transparent"
+                    android:layout_centerInParent="true"
+                    app:circleColor="@android:color/white"/>
+
+            <android.arnab.softdraw.Circle
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_centerInParent="true"
+                    app:circleColor="#3b2219"
+                    android:background="@android:color/transparent"/>
+            <android.arnab.softdraw.Circle
+                    android:id="@+id/circle3"
+                    android:layout_width="@dimen/colorPaletteElementWidth"
+                    android:layout_height="@dimen/colorPaletteElementHeight"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    app:circleColor="@color/color3"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <android.arnab.softdraw.Circle
+                    android:id="@+id/border4"
+                    android:layout_width="@dimen/borderRadius"
+                    android:layout_height="@dimen/borderRadius"
+                    android:layout_margin="3dp"
+                    android:background="@android:color/transparent"
+                    android:layout_centerInParent="true"
+                    app:circleColor="@color/color4"/>
+
+            <android.arnab.softdraw.Circle
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@android:color/transparent"
+                    android:layout_centerInParent="true"
+                    app:circleColor="@android:color/white"/>
+
+            <android.arnab.softdraw.Circle
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_centerInParent="true"
+                    app:circleColor="#3b2219"
+                    android:background="@android:color/transparent"/>
+            <android.arnab.softdraw.Circle
+                    android:id="@+id/circle4"
+                    android:layout_width="@dimen/colorPaletteElementWidth"
+                    android:layout_height="@dimen/colorPaletteElementHeight"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    app:circleColor="@color/color4"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <android.arnab.softdraw.Circle
+                    android:id="@+id/border5"
+                    android:layout_width="@dimen/borderRadius"
+                    android:layout_height="@dimen/borderRadius"
+                    android:layout_margin="3dp"
+                    android:background="@android:color/transparent"
+                    android:layout_centerInParent="true"
+                    app:circleColor="@color/color5"/>
+
+            <android.arnab.softdraw.Circle
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:background="@android:color/transparent"
+                    android:layout_centerInParent="true"
+                    app:circleColor="@android:color/white"/>
+
+            <android.arnab.softdraw.Circle
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_centerInParent="true"
+                    app:circleColor="#3b2219"
+                    android:background="@android:color/transparent"/>
+            <android.arnab.softdraw.Circle
+                    android:id="@+id/circle5"
+                    android:layout_width="@dimen/colorPaletteElementWidth"
+                    android:layout_height="@dimen/colorPaletteElementHeight"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    app:circleColor="@color/color5"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <android.arnab.softdraw.Circle
+                    android:id="@+id/border6"
+                    android:layout_width="@dimen/borderRadius"
+                    android:layout_height="@dimen/borderRadius"
+                    android:layout_margin="3dp"
+                    android:background="@android:color/transparent"
+                    android:layout_centerInParent="true"
+                    app:circleColor="@color/color6"
+                    android:layout_marginLeft="5dp"/>
+
+            <android.arnab.softdraw.Circle
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@android:color/transparent"
+                    android:layout_centerInParent="true"
+                    app:circleColor="@android:color/white"/>
+
+            <android.arnab.softdraw.Circle
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_centerInParent="true"
+                    app:circleColor="#3b2219"
+                    android:background="@android:color/transparent"/>
+            <android.arnab.softdraw.Circle
+                    android:id="@+id/circle6"
+                    android:layout_width="@dimen/colorPaletteElementWidth"
+                    android:layout_height="@dimen/colorPaletteElementHeight"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    app:circleColor="@color/color6"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <android.arnab.softdraw.Circle
+                    android:id="@+id/border7"
+                    android:layout_width="@dimen/borderRadius"
+                    android:layout_height="@dimen/borderRadius"
+                    android:layout_margin="3dp"
+                    android:background="@android:color/transparent"
+                    android:layout_centerInParent="true"
+                    app:circleColor="@color/color7"/>
+
+            <android.arnab.softdraw.Circle
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@android:color/transparent"
+                    android:layout_centerInParent="true"
+                    app:circleColor="@android:color/white"/>
+
+            <android.arnab.softdraw.Circle
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_centerInParent="true"
+                    app:circleColor="#3b2219"
+                    android:background="@android:color/transparent"/>
+            <android.arnab.softdraw.Circle
+                    android:id="@+id/circle7"
+                    android:layout_width="@dimen/colorPaletteElementWidth"
+                    android:layout_height="@dimen/colorPaletteElementHeight"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    app:circleColor="@color/color7"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <android.arnab.softdraw.Circle
+                    android:id="@+id/border8"
+                    android:layout_width="@dimen/borderRadius"
+                    android:layout_height="@dimen/borderRadius"
+                    android:layout_margin="3dp"
+                    android:background="@android:color/transparent"
+                    android:layout_centerInParent="true"
+                    app:circleColor="@color/color8"/>
+
+            <android.arnab.softdraw.Circle
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@android:color/transparent"
+                    android:layout_centerInParent="true"
+                    app:circleColor="@android:color/white"/>
+
+            <android.arnab.softdraw.Circle
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_centerInParent="true"
+                    app:circleColor="#3b2219"
+                    android:background="@android:color/transparent"/>
+            <android.arnab.softdraw.Circle
+                    android:id="@+id/circle8"
+                    android:layout_width="@dimen/colorPaletteElementWidth"
+                    android:layout_height="@dimen/colorPaletteElementHeight"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    app:circleColor="@color/color8"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <android.arnab.softdraw.Circle
+                    android:id="@+id/border9"
+                    android:layout_width="@dimen/borderRadius"
+                    android:layout_height="@dimen/borderRadius"
+                    android:layout_margin="3dp"
+                    android:background="@android:color/transparent"
+                    android:layout_centerInParent="true"
+                    app:circleColor="@color/color9"/>
+
+            <android.arnab.softdraw.Circle
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@android:color/transparent"
+                    android:layout_centerInParent="true"
+                    app:circleColor="@android:color/white"/>
+
+            <android.arnab.softdraw.Circle
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_centerInParent="true"
+                    app:circleColor="#3b2219"
+                    android:background="@android:color/transparent"/>
+            <android.arnab.softdraw.Circle
+                    android:id="@+id/circle9"
+                    android:layout_width="@dimen/colorPaletteElementWidth"
+                    android:layout_height="@dimen/colorPaletteElementHeight"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    app:circleColor="@color/color9"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <android.arnab.softdraw.Circle
+                    android:id="@+id/border10"
+                    android:layout_width="@dimen/borderRadius"
+                    android:layout_height="@dimen/borderRadius"
+                    android:layout_margin="3dp"
+                    android:background="@android:color/transparent"
+                    android:layout_centerInParent="true"
+                    app:circleColor="@color/color10"/>
+
+            <android.arnab.softdraw.Circle
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@android:color/transparent"
+                    android:layout_centerInParent="true"
+                    app:circleColor="@android:color/white"/>
+
+            <android.arnab.softdraw.Circle
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_centerInParent="true"
+                    app:circleColor="#3b2219"
+                    android:background="@android:color/transparent"/>
+            <android.arnab.softdraw.Circle
+                    android:id="@+id/circle10"
+                    android:layout_width="@dimen/colorPaletteElementWidth"
+                    android:layout_height="@dimen/colorPaletteElementHeight"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    app:circleColor="@color/color10"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <android.arnab.softdraw.Circle
+                    android:id="@+id/border11"
+                    android:layout_width="@dimen/borderRadius"
+                    android:layout_height="@dimen/borderRadius"
+                    android:layout_margin="3dp"
+                    android:background="@android:color/transparent"
+                    android:layout_centerInParent="true"
+                    app:circleColor="@color/color11"/>
+
+            <android.arnab.softdraw.Circle
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@android:color/transparent"
+                    android:layout_centerInParent="true"
+                    app:circleColor="@android:color/white"/>
+
+            <android.arnab.softdraw.Circle
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_centerInParent="true"
+                    app:circleColor="#3b2219"
+                    android:background="@android:color/transparent"/>
+            <android.arnab.softdraw.Circle
+                    android:id="@+id/circle11"
+                    android:layout_width="@dimen/colorPaletteElementWidth"
+                    android:layout_height="@dimen/colorPaletteElementHeight"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    app:circleColor="@color/color11"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <android.arnab.softdraw.Circle
+                    android:id="@+id/border12"
+                    android:layout_width="@dimen/borderRadius"
+                    android:layout_height="@dimen/borderRadius"
+                    android:layout_margin="3dp"
+                    android:background="@android:color/transparent"
+                    android:layout_centerInParent="true"
+                    app:circleColor="@color/color12"/>
+
+            <android.arnab.softdraw.Circle
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@android:color/transparent"
+                    android:layout_centerInParent="true"
+                    app:circleColor="@android:color/white"/>
+
+            <android.arnab.softdraw.Circle
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_centerInParent="true"
+                    app:circleColor="#3b2219"
+                    android:background="@android:color/transparent"/>
+            <android.arnab.softdraw.Circle
+                    android:id="@+id/circle12"
+                    android:layout_width="@dimen/colorPaletteElementWidth"
+                    android:layout_height="@dimen/colorPaletteElementHeight"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    app:circleColor="@color/color12"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <android.arnab.softdraw.Circle
+                    android:id="@+id/border13"
+                    android:layout_width="@dimen/borderRadius"
+                    android:layout_height="@dimen/borderRadius"
+                    android:layout_margin="3dp"
+                    android:background="@android:color/transparent"
+                    android:layout_centerInParent="true"
+                    app:circleColor="@color/color13"/>
+
+            <android.arnab.softdraw.Circle
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:background="@android:color/transparent"
+                    android:layout_centerInParent="true"
+                    app:circleColor="@android:color/white"/>
+
+            <android.arnab.softdraw.Circle
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_centerInParent="true"
+                    app:circleColor="#3b2219"
+                    android:background="@android:color/transparent"/>
+            <android.arnab.softdraw.Circle
+                    android:id="@+id/circle13"
+                    android:layout_width="@dimen/colorPaletteElementWidth"
+                    android:layout_height="@dimen/colorPaletteElementHeight"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    app:circleColor="@color/color13"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <android.arnab.softdraw.Circle
+                    android:id="@+id/border14"
+                    android:layout_width="@dimen/borderRadius"
+                    android:layout_height="@dimen/borderRadius"
+                    android:layout_margin="3dp"
+                    android:background="@android:color/transparent"
+                    android:layout_centerInParent="true"
+                    app:circleColor="@color/color14"
+                    android:layout_marginLeft="5dp"/>
+
+            <android.arnab.softdraw.Circle
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@android:color/transparent"
+                    android:layout_centerInParent="true"
+                    app:circleColor="@android:color/white"/>
+
+            <android.arnab.softdraw.Circle
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_centerInParent="true"
+                    app:circleColor="#3b2219"
+                    android:background="@android:color/transparent"/>
+            <android.arnab.softdraw.Circle
+                    android:id="@+id/circle14"
+                    android:layout_width="@dimen/colorPaletteElementWidth"
+                    android:layout_height="@dimen/colorPaletteElementHeight"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    app:circleColor="@color/color14"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <android.arnab.softdraw.Circle
+                    android:id="@+id/border15"
+                    android:layout_width="@dimen/borderRadius"
+                    android:layout_height="@dimen/borderRadius"
+                    android:layout_margin="3dp"
+                    android:background="@android:color/transparent"
+                    android:layout_centerInParent="true"
+                    app:circleColor="@color/color15"/>
+
+            <android.arnab.softdraw.Circle
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@android:color/transparent"
+                    android:layout_centerInParent="true"
+                    app:circleColor="@android:color/white"/>
+
+            <android.arnab.softdraw.Circle
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_centerInParent="true"
+                    app:circleColor="#3b2219"
+                    android:background="@android:color/transparent"/>
+            <android.arnab.softdraw.Circle
+                    android:id="@+id/circle15"
+                    android:layout_width="@dimen/colorPaletteElementWidth"
+                    android:layout_height="@dimen/colorPaletteElementHeight"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    app:circleColor="@color/color15"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <android.arnab.softdraw.Circle
+                    android:id="@+id/border16"
+                    android:layout_width="@dimen/borderRadius"
+                    android:layout_height="@dimen/borderRadius"
+                    android:layout_margin="3dp"
+                    android:background="@android:color/transparent"
+                    android:layout_centerInParent="true"
+                    app:circleColor="@color/color16"/>
+
+            <android.arnab.softdraw.Circle
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@android:color/transparent"
+                    android:layout_centerInParent="true"
+                    app:circleColor="@android:color/white"/>
+
+            <android.arnab.softdraw.Circle
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_centerInParent="true"
+                    app:circleColor="#3b2219"
+                    android:background="@android:color/transparent"/>
+            <android.arnab.softdraw.Circle
+                    android:id="@+id/circle16"
+                    android:layout_width="@dimen/colorPaletteElementWidth"
+                    android:layout_height="@dimen/colorPaletteElementHeight"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    app:circleColor="@color/color16"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <android.arnab.softdraw.Circle
+                    android:id="@+id/border17"
+                    android:layout_width="@dimen/borderRadius"
+                    android:layout_height="@dimen/borderRadius"
+                    android:layout_margin="3dp"
+                    android:background="@android:color/transparent"
+                    android:layout_centerInParent="true"
+                    app:circleColor="@color/color17"/>
+
+            <android.arnab.softdraw.Circle
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@android:color/transparent"
+                    android:layout_centerInParent="true"
+                    app:circleColor="@android:color/white"/>
+
+            <android.arnab.softdraw.Circle
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_centerInParent="true"
+                    app:circleColor="#3b2219"
+                    android:background="@android:color/transparent"/>
+            <android.arnab.softdraw.Circle
+                    android:id="@+id/circle17"
+                    android:layout_width="@dimen/colorPaletteElementWidth"
+                    android:layout_height="@dimen/colorPaletteElementHeight"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    app:circleColor="@color/color17"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <android.arnab.softdraw.Circle
+                    android:id="@+id/border18"
+                    android:layout_width="@dimen/borderRadius"
+                    android:layout_height="@dimen/borderRadius"
+                    android:layout_margin="3dp"
+                    android:background="@android:color/transparent"
+                    android:layout_centerInParent="true"
+                    app:circleColor="@color/color18"/>
+
+            <android.arnab.softdraw.Circle
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@android:color/transparent"
+                    android:layout_centerInParent="true"
+                    app:circleColor="@android:color/white"/>
+
+            <android.arnab.softdraw.Circle
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_centerInParent="true"
+                    app:circleColor="#3b2219"
+                    android:background="@android:color/transparent"/>
+            <android.arnab.softdraw.Circle
+                    android:id="@+id/circle18"
+                    android:layout_width="@dimen/colorPaletteElementWidth"
+                    android:layout_height="@dimen/colorPaletteElementHeight"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    app:circleColor="@color/color18"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <android.arnab.softdraw.Circle
+                    android:id="@+id/border19"
+                    android:layout_width="@dimen/borderRadius"
+                    android:layout_height="@dimen/borderRadius"
+                    android:layout_margin="3dp"
+                    android:background="@android:color/transparent"
+                    android:layout_centerInParent="true"
+                    app:circleColor="@color/color19"/>
+
+            <android.arnab.softdraw.Circle
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@android:color/transparent"
+                    android:layout_centerInParent="true"
+                    app:circleColor="@android:color/white"/>
+
+            <android.arnab.softdraw.Circle
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_centerInParent="true"
+                    app:circleColor="#3b2219"
+                    android:background="@android:color/transparent"/>
+            <android.arnab.softdraw.Circle
+                    android:id="@+id/circle19"
+                    android:layout_width="@dimen/colorPaletteElementWidth"
+                    android:layout_height="@dimen/colorPaletteElementHeight"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    app:circleColor="@color/color19"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <android.arnab.softdraw.Circle
+                    android:id="@+id/border20"
+                    android:layout_width="@dimen/borderRadius"
+                    android:layout_height="@dimen/borderRadius"
+                    android:layout_margin="3dp"
+                    android:background="@android:color/transparent"
+                    android:layout_centerInParent="true"
+                    app:circleColor="@color/color20"/>
+
+            <android.arnab.softdraw.Circle
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@android:color/transparent"
+                    android:layout_centerInParent="true"
+                    app:circleColor="@android:color/white"/>
+
+            <android.arnab.softdraw.Circle
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_centerInParent="true"
+                    app:circleColor="#3b2219"
+                    android:background="@android:color/transparent"/>
+            <android.arnab.softdraw.Circle
+                    android:id="@+id/circle20"
+                    android:layout_width="@dimen/colorPaletteElementWidth"
+                    android:layout_height="@dimen/colorPaletteElementHeight"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    app:circleColor="@color/color20"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <android.arnab.softdraw.Circle
+                    android:id="@+id/border21"
+                    android:layout_width="@dimen/borderRadius"
+                    android:layout_height="@dimen/borderRadius"
+                    android:layout_margin="3dp"
+                    android:background="@android:color/transparent"
+                    android:layout_centerInParent="true"
+                    app:circleColor="@color/color21"/>
+
+            <android.arnab.softdraw.Circle
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:background="@android:color/transparent"
+                    android:layout_centerInParent="true"
+                    app:circleColor="@android:color/white"/>
+
+            <android.arnab.softdraw.Circle
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_centerInParent="true"
+                    app:circleColor="#3b2219"
+                    android:background="@android:color/transparent"/>
+            <android.arnab.softdraw.Circle
+                    android:id="@+id/circle21"
+                    android:layout_width="@dimen/colorPaletteElementWidth"
+                    android:layout_height="@dimen/colorPaletteElementHeight"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    app:circleColor="@color/color21"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/brushRel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/transparent_bg"
+            android:scaleType="fitXY"/>
+
+    <android.arnab.softdraw.SampleStroke
+            android:id="@+id/sampleStroke"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="@android:color/transparent"/>
+
+    <LinearLayout
+            android:id="@+id/swipeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sampleStroke"
+            android:orientation="vertical">
+        <LinearLayout
+                android:id="@+id/palleteRow1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/brush1"
+                    android:layout_width="@dimen/palleteToolWidth"
+                    android:layout_height="@dimen/palleteToolHeight"
+                    android:background="@drawable/grey_circle"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/sketch_pen"/>
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/brush2"
+                    android:layout_width="@dimen/palleteToolWidth"
+                    android:layout_height="@dimen/palleteToolHeight"
+                    android:background="@drawable/grey_circle"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/highlighter"/>
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/brush3"
+                    android:layout_width="@dimen/palleteToolWidth"
+                    android:layout_height="@dimen/palleteToolHeight"
+                    android:background="@drawable/grey_circle"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/pencil"/>
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/brush4"
+                    android:layout_width="@dimen/palleteToolWidth"
+                    android:layout_height="@dimen/palleteToolHeight"
+                    android:background="@drawable/grey_circle"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/fountain_pen"/>
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/brush5"
+                    android:layout_width="@dimen/palleteToolWidth"
+                    android:layout_height="@dimen/palleteToolHeight"
+                    android:background="@drawable/grey_circle"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/spray_gun"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+                android:id="@+id/palleteRow2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/brush6"
+                    android:layout_width="@dimen/palleteToolWidth"
+                    android:layout_height="@dimen/palleteToolHeight"
+                    android:background="@drawable/grey_circle"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/eraser"/>
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/brush7"
+                    android:layout_width="@dimen/palleteToolWidth"
+                    android:layout_height="@dimen/palleteToolHeight"
+                    android:background="@drawable/grey_circle"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/rounded_eraser"
+                    app:riv_corner_radius="100dp"/>
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/brush8"
+                    android:layout_width="@dimen/palleteToolWidth"
+                    android:layout_height="@dimen/palleteToolHeight"
+                    android:background="@drawable/grey_circle"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/smudge"/>
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/brush9"
+                    android:layout_width="@dimen/palleteToolWidth"
+                    android:layout_height="@dimen/palleteToolHeight"
+                    android:background="@drawable/grey_circle"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/rub"/>
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/brush10"
+                    android:layout_width="@dimen/palleteToolWidth"
+                    android:layout_height="@dimen/palleteToolHeight"
+                    android:background="@drawable/grey_circle"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/can"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/sizeTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Size"
+            android:layout_below="@+id/swipeLayout"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"/>
+
+    <TextView
+            android:id="@+id/sizeVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25px"
+            android:layout_below="@+id/swipeLayout"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"/>
+    <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/minus"
+            android:layout_below="@+id/sizeTxt"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitCenter"/>
+
+    <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/plus"
+            android:layout_below="@+id/sizeVal"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentEnd="true"
+            android:scaleType="fitXY"/>
+    <SeekBar
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/sizeBar"
+            android:layout_below="@+id/sizeTxt"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="75dp"
+            android:progress="25"/>
+
+    <TextView
+            android:id="@+id/opTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Size"
+            android:layout_below="@+id/sizeBar"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"/>
+
+    <TextView
+            android:id="@+id/opVal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="80%"
+            android:layout_below="@+id/sizeBar"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"/>
+    <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/minus"
+            android:layout_below="@+id/opTxt"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitCenter"/>
+
+    <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/plus"
+            android:layout_below="@+id/opVal"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentEnd="true"
+            android:scaleType="fitXY"/>
+    <SeekBar
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/opBar"
+            android:layout_below="@+id/opTxt"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="75dp"
+            android:progress="80"/>
+    <include
+            layout="@layout/color_palette_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/opBar"/>
+
+</RelativeLayout>

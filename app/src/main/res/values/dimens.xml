@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="topBarIconWidth">45dp</dimen>
+    <dimen name="palleteToolWidth">60dp</dimen>
+    <dimen name="palleteToolHeight">60dp</dimen>
+    <dimen name="colorPaletteElementWidth">30dp</dimen>
+    <dimen name="colorPaletteElementHeight">30dp</dimen>
+    <dimen name="borderRadius">37dp</dimen>
+    <dimen name="whiteRadius">34dp</dimen>
+</resources>
